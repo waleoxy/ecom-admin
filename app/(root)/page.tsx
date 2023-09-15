@@ -1,3 +1,9 @@
-export default function Home() {
-  return <p>Hello Admin Dashboard</p>;
+import { Button } from "@/components/ui/button";
+
+export default function Pd() {
+  return (
+    <>
+      <Button>Click me</Button>
+    </>
+  );
 }
