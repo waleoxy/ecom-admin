@@ -2,6 +2,7 @@ import { auth } from "@clerk/nextjs";
 import React from "react";
 import { redirect } from "next/navigation";
 import prismaDb from "@/lib/prismaDb";
+
 import Navbar from "@/components/navbar";
 
 const DashboardLayout = async ({
