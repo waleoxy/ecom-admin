@@ -11,9 +11,10 @@ interface ApiListProps {
 
 const ApiList: React.FC<ApiListProps> = ({ entityIdname, entityName }) => {
   const params = useParams();
-  //   const origin = useOrigin();
+  const origin = useOrigin();
 
   const baseUrl = `${origin}/api/${params.storeId}`;
+
   return (
     <>
       <ApiAlert
