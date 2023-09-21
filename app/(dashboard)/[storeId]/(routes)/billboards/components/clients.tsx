@@ -30,7 +30,7 @@ const BillboardClient: React.FC<BillboardClientProps> = ({ data }) => {
         </Button>
       </div>
       <Separator />
-      <DataTable searchKey="label" columns={columns} data={data} />
+      <DataTable filterKey="label" columns={columns} data={data} />
     </>
   );
 };
