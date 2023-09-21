@@ -110,7 +110,7 @@ export const DELETE = async (
       },
     });
 
-    NextResponse.json(billboard);
+    return NextResponse.json(billboard);
   } catch (error) {
     console.log("billboard-delete", error);
     return new NextResponse("Internal server error", { status: 500 });
