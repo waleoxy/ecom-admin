@@ -1,8 +1,8 @@
 import prismaDb from "@/lib/prismaDb";
-import BillboardClient from "./components/clients";
 import { OrderColumn } from "./components/columns";
 import { format } from "date-fns";
 import { formatter } from "@/lib/utils";
+import OrderClient from "./components/clients";
 
 const OrdersPage = async ({ params }: { params: { storeId: string } }) => {
   const orders = await prismaDb.order.findMany({
@@ -40,7 +40,7 @@ const OrdersPage = async ({ params }: { params: { storeId: string } }) => {
   return (
     <div className="flex flex-col">
       <div className="flex-1 space-y-4 p-8 pt-6">
-        <BillboardClient data={formattedOrders} />
+        <OrderClient data={formattedOrders} />
       </div>
     </div>
   );
