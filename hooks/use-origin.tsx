@@ -10,7 +10,7 @@ export const useOrigin = () => {
   useEffect(() => {
     setMounted(true);
   }, []);
-  if (mounted) {
+  if (!mounted) {
     return "";
   }
   return origin;
